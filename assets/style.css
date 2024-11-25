@@ -1,0 +1,196 @@
+/* style.css */
+
+body {
+    /* Police principale du site, sans-serif pour un style moderne */
+    font-family: Arial, sans-serif;
+    /* Suppression des marges et des paddings par défaut */
+    margin: 0;
+    padding: 0;
+    /* Espacement entre les lignes pour une meilleure lisibilité */
+    line-height: 1.6;
+    /* Couleur de texte par défaut en gris foncé */
+    color: #333;
+}
+
+header {
+    /* Arrière-plan bleu pour l'en-tête */
+    background: #007BFF;
+    /* Couleur blanche pour le texte de l'en-tête */
+    color: #fff;
+    /* Padding vertical de l'en-tête */
+    padding: 1rem 0;
+}
+
+.navbar {
+    /* Barre de navigation alignée horizontalement avec flexbox */
+    display: flex;
+    justify-content: space-around;
+    /* Espacement uniforme entre les éléments */
+    gap: 1.5rem;
+}
+
+.navbar a {
+    /* Couleur blanche pour les liens dans la barre de navigation */
+    color: #fff;
+    /* Suppression du soulignement des liens */
+    text-decoration: none;
+    /* Texte en gras pour les liens */
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    /* Soulignement et changement de couleur au survol des liens */
+    text-decoration: underline;
+    color: #333;
+}
+
+.apropos {
+    /* Centrage du texte dans la section "À propos" */
+    text-align: center;
+    /* Padding pour espacer le contenu verticalement */
+    padding: 2rem 1rem;
+}
+
+.pp {
+    /* Taille de l'image de profil */
+    width: 20%;
+    /* Forme parfaitement circulaire */
+    border-radius: 50%;
+    /* Espacement inférieur pour séparer de l'autre contenu */
+    margin-bottom: 1rem;
+}
+
+
+.competences, .projets, .contact {
+    /* Padding uniforme pour chaque section */
+    padding: 2rem 1rem;
+}
+
+.competences ul {
+    /* Suppression des puces dans la liste */
+    list-style: none;
+    padding: 0;
+    /* Affichage flexible pour les éléments de compétences */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Espacement entre les compétences */
+    gap: 1rem;
+}
+
+.competences li {
+    /* Fond bleu pour chaque compétence */
+    background: #007BFF;
+    /* Texte blanc pour contraster avec le fond */
+    color: #fff;
+    /* Padding interne pour chaque compétence */
+    padding: 0.5rem 1rem;
+    /* Bordures arrondies pour un style moderne */
+    border-radius: 5px;
+    /* Ombre légère pour un effet de relief */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projets .projet-grid {
+    /* Disposition en grille pour les projets */
+    display: grid;
+    /* Colonnes adaptatives en fonction de la taille disponible */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Espacement entre les cartes de projet */
+    gap: 1rem;
+    /* Espacement au-dessus de la grille */
+    margin-top: 1rem;
+}
+
+.projet-card {
+    /* Fond gris clair pour les cartes de projet */
+    background: #f4f4f4;
+    /* Padding interne des cartes */
+    padding: 1rem;
+    /* Bordure fine pour encadrer les cartes */
+    border: 1px solid #ddd;
+    /* Coins légèrement arrondis */
+    border-radius: 5px;
+    /* Centrage du contenu à l'intérieur des cartes */
+    text-align: center;
+    /* Ombre légère pour donner du relief aux cartes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projet-card:hover {
+    /* Léger déplacement vers le haut au survol pour un effet interactif */
+    transform: translateY(-5px);
+}
+
+.langues {
+    /* Padding pour espacer la section des langues */
+    padding: 2rem 1rem;
+}
+
+.langues img {
+    /* Hauteur uniforme pour les drapeaux */
+    height: 50px;
+}
+
+.experience {
+    /* Padding pour espacer la section des expériences professionnelles */
+    padding: 2rem 1rem;
+}
+
+.qualites {
+    /* Padding pour espacer la section des qualités personnelles */
+    padding: 2rem 1rem;
+}
+
+.projet-card img {
+    /* Hauteur définie pour les images des projets */
+    height: 150px;
+}
+
+.contact a {
+    /* Couleur bleue pour les liens dans la section contact */
+    color: #007BFF;
+    /* Suppression du soulignement par défaut */
+    text-decoration: none;
+    /* Texte en gras pour les liens */
+    font-weight: bold;
+}
+
+.contact a:hover {
+    /* Soulignement au survol des liens */
+    text-decoration: underline;
+}
+
+footer {
+    /* Centrage du texte dans le pied de page */
+    text-align: center;
+    /* Fond bleu cohérent avec le reste du design */
+    background: #007BFF;
+    /* Texte blanc pour le contraste */
+    color: #fff;
+    /* Padding vertical dans le pied de page */
+    padding: 1rem 0;
+    /* Espacement supérieur avant le pied de page */
+    margin-top: 2rem;
+}
+
+h2 {
+    /* Soulignement automatique des titres secondaires */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adaptation de la barre de navigation pour les petits écrans */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        height: 160px;
+    }
+
+    /* Affichage vertical des compétences sur mobile */
+    .competences ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

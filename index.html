@@ -3,9 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MON CV NUMÉRIQUE</title>
+    <title>CV Numérique</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <header>
+        <!-- La barre de navigation principale, placée dans l'en-tête -->
+        <nav class="navbar">
+            <!-- Chaque lien pointe vers une section spécifique du CV -->
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Réalisations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Section "À propos" contenant une image de profil, un nom, et une description personnelle -->
+        <section id="apropos" class="apropos">
+            <div class="profil">
+                <!-- Image de profil avec un chemin local -->
+                <img src="img/IMG_2390.heic" alt="Photo de profil" class="pp">
+                <!-- Nom de l'utilisateur -->
+                <h1>Zakaria Commarteau</h1>
+                <!-- Brève description personnelle -->
+                <p>Étudiant à LaManu en première année, je recherche un stage dans le domaine du design numérique</p>
+            </div>
+        </section>
+    
+        <!-- Section "Compétences" affichant une liste de compétences techniques -->
+        <section id="competences" class="competences">
+            <h2>Compétences :</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Figma</li>
+                <li>Illustrator</li>
+                <li>Site Web</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+    
+        <!-- Section "Réalisations" présentant des projets personnels -->
+        <section id="projets" class="projets">
+            <h2>Réalisations :</h2>
+            <div class="projet-grid">
+                <!-- Carte de projet n°1 -->
+                <div class="projet-card">
+                    <h3>Projet 1</h3>
+                    <p>Reproduire le bouclier de Captain America sur Illustrator</p>
+                    <img src="img/bouclier captain america projet.png" alt="bouclier captain america">
+                </div>
+                <!-- Carte de projet n°2 -->
+                <div class="projet-card">
+                    <h3>Projet 2</h3>
+                    <p>Créer une application de musique sur Figma</p>
+                    <img src="img/Capture d’écran 2024-11-24 à 21.46.43.png" alt="appli musique">
+                </div>
+                <!-- Carte de projet n°3 -->
+                <div class="projet-card">
+                    <h3>Projet 3</h3>
+                    <p>Reproduire un modèle de typographie en utlisant du css</p>
+                    <img src="img/Capture d’écran 2024-11-24 à 21.54.54.png" alt="td typographie-du-web">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section "Langues" listant les langues parlées et associant un drapeau à chacune -->
+        <section id="langues" class="langues">
+            <h2>Langues :</h2>
+            <!-- Langue 1 : Français -->
+            <p>Français (langue maternelle )</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ensign_of_France.svg/langfr-225px-Ensign_of_France.svg.png" alt="drapeau français">
+            <!-- Langue 2 : Anglais -->
+            <p>Anglais</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/langfr-225px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="drapeau angleterre">
+        </section>
+    
+        <!-- Section "Expérience professionnelle" décrivant une expérience et les tâches effectuées -->
+        <section id="experience" class="experience">
+            <h2>Expérience Professionelle :</h2>
+            <p>Conseiller Intersport (3semaines)</p>
+            <ul>
+                <li>Vendre un produit à des clients</li>
+                <li>Trier des produits selon leur catégories</li>
+                <li>Travailler en équipe</li>
+                <li>Ouvrir correctement des colis</li>
+            </ul>
+        </section>
+    
+        <!-- Section "Qualités personnelles" listant les atouts personnels -->
+        <section id="qualites" class="qualites">
+            <h2>Mes Qualités :</h2>
+            <ul>
+                <li>À l'Écoute</li>
+                <li>Poli</li>
+                <li>Sérieux</li>
+            </ul>
+        </section>
+    
+        <!-- Section "Contact" fournissant des liens pour envoyer un email ou appeler -->
+        <section id="contact" class="contact">
+            <h2>Contact :</h2>
+            <p>Envoyez-moi un e-mail à <a href="mailto:zcommarteau@gmail.com">zcommarteau@gmail.com</a> ou appelez-moi au <a href="tel:+0761702006">07 61 70 20 06</a>.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Pied de page affichant l'année -->
+        <p>2024</p>
+    </footer>
     
 </body>
-</html>
+</html> 
